@@ -2,39 +2,16 @@ $(document).ready(function () {
   
   $(".next").click(function () {
     nextImg();
-    
   });
   $(".prev").click(function () {
      prevImg();
-    
   });
-  $('#c1').click(function(){
-    var activeImg = $(".active");
-    var img = $('#img1');
-    activeImg.removeClass('active');
-    img.addClass('active');
-    $('#c1').addClass('active');
-  });
-  $('#c2').click(function(){
-    var activeImg = $(".active");
-    var img = $('#img2');
-    activeImg.removeClass('active');
-    img.addClass('active');
-    $('#c2').addClass('active');
-  });
-  $('#c3').click(function(){
-    var activeImg = $(".active");
-    var img = $('#img3');
-    activeImg.removeClass('active');
-    img.addClass('active');
-    $('#c3').addClass('active')
-  });
-  $('#c4').click(function(){
-    var activeImg = $(".active");
-    var img = $('#img4');
-    activeImg.removeClass('active');
-    img.addClass('active');
-    $('#c4').addClass('active');
+  
+  $('.fa-circle').click(function(){
+    $('i.active').removeClass('active');
+    $('img.active').removeClass('active');
+    $(this).addClass('active');
+    $('img').eq($(this).index()).addClass('active');
   });
   //funzioni
   function nextImg() {
