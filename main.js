@@ -8,7 +8,34 @@ $(document).ready(function () {
      prevImg();
     
   });
-  
+  $('#c1').click(function(){
+    var activeImg = $(".active");
+    var img = $('#img1');
+    activeImg.removeClass('active');
+    img.addClass('active');
+    $('#c1').addClass('active');
+  });
+  $('#c2').click(function(){
+    var activeImg = $(".active");
+    var img = $('#img2');
+    activeImg.removeClass('active');
+    img.addClass('active');
+    $('#c2').addClass('active');
+  });
+  $('#c3').click(function(){
+    var activeImg = $(".active");
+    var img = $('#img3');
+    activeImg.removeClass('active');
+    img.addClass('active');
+    $('#c3').addClass('active')
+  });
+  $('#c4').click(function(){
+    var activeImg = $(".active");
+    var img = $('#img4');
+    activeImg.removeClass('active');
+    img.addClass('active');
+    $('#c4').addClass('active');
+  });
   //funzioni
   function nextImg() {
     var activeImg = $(".images img.active");
@@ -42,7 +69,7 @@ $(document).ready(function () {
       activeImg.prev().addClass('active');
       activeDot.prev().addClass('active');
     }
-  }
+  };
 
   
 });
