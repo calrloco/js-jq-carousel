@@ -1,11 +1,14 @@
 $(document).ready(function () {
+  
   $(".next").click(function () {
     nextImg();
+    
   });
   $(".prev").click(function () {
-    prevImg();
+     prevImg();
+    
   });
-
+  
   //funzioni
   function nextImg() {
     var activeImg = $(".images img.active");
