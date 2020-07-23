@@ -43,8 +43,6 @@ $(document).ready(function () {
       activeDot.prev().addClass('active');
     }
   }
-  function dotsChange(){
-    
-  }
+
   
 });
